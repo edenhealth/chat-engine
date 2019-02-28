@@ -100,6 +100,7 @@ class User extends Emitter {
      @private
      */
     assign(state) {
+        console.log(`user_state_assign: ${state}`);
 
         let oldState = this.state || {};
         this.state = Object.assign(oldState, state);
